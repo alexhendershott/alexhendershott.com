@@ -5,7 +5,7 @@ var note=document.querySelector(".story-note");
 function msg(t){if(note)note.textContent=t;}
 btns.forEach(function(b){
   b.addEventListener("click",async function(){
-    var url=b.dataset.img,name=url.split("/").pop();
+    var url=b.dataset.img,name=url.split("/").pop().split("?")[0];
     try{
       var blob=await (await fetch(url)).blob();
       var file=new File([blob],name,{type:"image/jpeg"});
