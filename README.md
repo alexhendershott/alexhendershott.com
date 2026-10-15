@@ -5,6 +5,7 @@ Plain HTML blog on GitHub Pages. No build step (`.nojekyll` turns Jekyll off).
 - `index.html` is the homepage and post list (newest first).
 - `posts/<slug>.html` is one post, served at `/posts/<slug>`.
 - `images/<slug>/` holds that post's photos.
+- Photos: `NN.jpg` (max 1800px) plus `NN-t.jpg` thumbnails (640px), metadata stripped. `gallery.js` opens grid photos full screen.
 - `style.css` is the only stylesheet. `t.js` is the page-view counter.
 
 ## New post
@@ -22,6 +23,7 @@ Plain HTML blog on GitHub Pages. No build step (`.nojekyll` turns Jekyll off).
 <meta name="description" content="ONE-LINE SUMMARY">
 <link rel="stylesheet" href="/style.css">
 <script defer src="/t.js"></script>
+<script defer src="/gallery.js"></script>
 </head>
 <body>
 <main>
@@ -31,7 +33,10 @@ Plain HTML blog on GitHub Pages. No build step (`.nojekyll` turns Jekyll off).
 <p class="meta"><time datetime="2026-10-15">October 15, 2026</time></p>
 <p>Body text.</p>
 <section class="photos">
-<figure><img src="/images/SLUG/1.jpg" alt="DESCRIPTION" loading="lazy"><figcaption>Optional caption</figcaption></figure>
+<h3>Group label</h3>
+<div class="grid">  <!-- add class "two" for a 2-column grid -->
+<a href="/images/SLUG/01.jpg"><img src="/images/SLUG/01-t.jpg" alt="DESCRIPTION" loading="lazy"></a>
+</div>
 </section>
 </article>
 </main>

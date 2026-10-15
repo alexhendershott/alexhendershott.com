@@ -29,4 +29,16 @@ ul.posts time{font-size:15px;color:var(--muted);white-space:nowrap}
 .muted{color:var(--muted)}
 .dek{font-size:23px;line-height:1.45;color:var(--muted);margin:0 0 20px}
 .pull{font-size:27px;line-height:1.4;font-style:italic;margin:1.6em 0;padding-left:20px;border-left:3px solid var(--fg)}
-@media (max-width:600px){body{font-size:19px}h1{font-size:32px}main{padding-top:32px}.dek{font-size:20px}.pull{font-size:23px}.site{margin-bottom:48px}}
+.photos h3{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:36px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.grid a{display:block;aspect-ratio:1;overflow:hidden;border-radius:4px;background:var(--rule)}
+.grid img{width:100%;height:100%;object-fit:cover;border-radius:0;transition:transform .3s}
+.grid a:hover img{transform:scale(1.03)}
+.lb{position:fixed;inset:0;z-index:10;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.93)}
+.lb[hidden]{display:none}
+.lb img{max-width:92vw;max-height:88vh;width:auto;height:auto}
+.lb button{position:absolute;padding:12px 18px;border:0;background:none;color:#fff;opacity:.85;font:300 44px/1 -apple-system,BlinkMacSystemFont,sans-serif;cursor:pointer}
+.lb button:hover{opacity:1}
+.lb-x{top:4px;right:4px}.lb-p{left:0;top:50%;transform:translateY(-50%)}.lb-n{right:0;top:50%;transform:translateY(-50%)}
+@media (max-width:600px){body{font-size:19px}h1{font-size:32px}main{padding-top:32px}.dek{font-size:20px}.pull{font-size:23px}.site{margin-bottom:48px}.grid{gap:4px}}
