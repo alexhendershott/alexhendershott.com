@@ -10,8 +10,13 @@ Plain HTML blog on GitHub Pages. No build step (`.nojekyll` turns Jekyll off).
 
 ## New post
 
-1. Copy the template below to `posts/<slug>.html`.
-2. Add a line to the list in `index.html`.
+1. Copy `posts/the-life-i-lost.html` to `posts/<slug>.html` and swap the title, description, date, canonical/OG URLs, JSON-LD, body and photos.
+2. Make a 1200×630 `images/<slug>/og.jpg` link-preview image.
+3. Add the post to the list in `index.html`, to `sitemap.xml`, and as an `<item>` in `feed.xml`.
+
+Site-wide: `favicon.ico`, `images/apple-touch-icon.png`, `images/icon-*.png`, `site.webmanifest`, `images/og.jpg` (homepage preview), `404.html`, `robots.txt`.
+
+Old minimal template (for reference):
 
 ```html
 <!doctype html>

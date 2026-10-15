@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /stats
+Sitemap: https://alexhendershott.com/sitemap.xml
