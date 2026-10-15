@@ -41,4 +41,6 @@ Plain HTML blog on GitHub Pages. No build step (`.nojekyll` turns Jekyll off).
 
 ## Tracking
 
-`t.js` sends one beacon per page view (path, referrer host, screen width, a random visitor id) to a Google Apps Script web app in Alex's Google account, which appends a row to a Google Sheet and serves a private dashboard. No cookies. Visit any page with `?notrack` to exclude your own browser (`?track` turns it back on).
+`t.js` bumps a few public counters on [Abacus](https://abacus.jasoncameron.dev) (no account) per page view, in namespace `alexhendershott-com`: `total`, `d.YYYYMMDD` (views per day, Eastern time), `u.YYYYMMDD` (first view per browser per day), and `p.<path>` (views per page, e.g. `p.home`, `p.posts.my-post`). `/stats` reads them and draws the dashboard; it finds pages from the post list on the homepage. Nothing personal is stored and there are no cookies.
+
+Visit any page with `?notrack` to stop counting your own browser (`?track` turns it back on). Counters expire after six months without a hit.
