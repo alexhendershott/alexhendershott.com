@@ -7,7 +7,11 @@ main{max-width:680px;margin:0 auto;padding:48px 24px 120px}
 a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
 .site,h1,h2,h3,.meta,figcaption,ul.posts time{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
 .site{font-size:16px;font-weight:600;margin:0 0 72px}
-.site a{text-decoration:none}
+.site a{text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+.av{border-radius:50%;object-fit:cover;flex:none}
+.byline{display:flex;align-items:center;gap:12px;margin:0 0 44px}
+.byline .meta{margin:0;line-height:1.4}
+.byline b{color:var(--fg);font-weight:600}
 h1,h2,h3{line-height:1.2;letter-spacing:-.015em}
 h1{font-size:40px;margin:0 0 10px}
 h2{font-size:27px;margin:52px 0 10px}

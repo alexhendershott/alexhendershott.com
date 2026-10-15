@@ -27,7 +27,7 @@ Plain HTML blog on GitHub Pages. No build step (`.nojekyll` turns Jekyll off).
 </head>
 <body>
 <main>
-<header class="site"><a href="/">Alex Hendershott</a></header>
+<header class="site"><a href="/"><img class="av" src="/images/avatar.jpg" alt="" width="36" height="36">Alex Hendershott</a></header>
 <article>
 <h1>TITLE</h1>
 <p class="meta"><time datetime="2026-10-15">October 15, 2026</time></p>
